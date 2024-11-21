@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/bootstrap.css" />
+    <link rel="stylesheet" href="./CSS/mdb.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="shortcut icon" href="images/suitcase.png" type="image/x-icon">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>My Portfolio</title>
+    <style>
+      /* Custom styling inspired by Ulster University's website */
+      body {
+        font-family: Arial, sans-serif;
+        color: #333;
+        background-color: #CBDCEB;
+      }
+      
+      .navbar {
+        background-color: #133E87; /* Dark blue color */
+      }
+      .navbar-brand,
+      .nav-link {
+        color: #fff;
+        margin-left: 25px;
+        margin-right: 30px;
+      }
+      .navbar-toggler {
+        border-color: #fff;
+      }
+      .section-title {
+        color: #001a72;
+        font-weight: bold;
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+      }
+      .profile-pic {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .progress-bar {
+        background-color: #608BC1;
+      }
+      /* Card Styling */
+      .card {
+    border: none;
+    border-radius: 10px; /* No rounded corners for a sharper, cleaner look */
+    transition: transform 0.2s ease-in-out;
+    background-color: #F3F3E0;
+  }
+  .card:hover {
+    transform: scale(1.03); /* Slight hover effect for interactivity */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+  }
+  .card-img-top {
+    border-top-left-radius: 10px; /* Make sure image does not have rounded corners */
+    border-top-right-radius: 10px;
+  }
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #001a72;
+  }
+  .card-text {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  .btn-link {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #608BC1;
+    text-decoration: none;
+  }
+  .btn-link:hover {
+    color: #133E87; /* Darker blue on hover */
+    text-decoration: underline;
+  }
+  .form-control{
+    background-color: #F3F3E0 ;
+  }
+  
+      /* Footer Styles */
+  .footer {
+    background-color: #133E87;
+    color: white;
+  }
+  .footer-title {
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .footer p, .footer a, .footer ul {
+    color: #cccccc;
+  }
+  
+  .footer a.footer-link {
+    text-decoration: none;
+    color: #cccccc;
+  }
+  .footer a.footer-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  .footer ul {
+    padding: 0;
+    list-style: none;
+  }
+  .footer ul li {
+    margin: 8px 0;
+  }
+  .footer .list-inline-item {
+    margin-right: 15px;
+  }
+  .footer .footer-social-link img {
+    filter: brightness(0) invert(1); /* Makes icons white */
+    transition: filter 0.3s ease;
+  }
+  .footer .footer-social-link img:hover {
+    filter: brightness(1.5); /* Hover effect for icons */
+  }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section with Navigation -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <a class="navbar-brand" href="index.html">Portfolio | Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- <li class="nav-item"><a class="nav-link" href="#about">About</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="about.html" target="_blank">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html"target="_blank">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html"target="_blank">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"target="_blank">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    
+    <!-- About Me Section -->
+    <section id="about" class="container my-5">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="/images/myimg.jpg" alt="Profile Picture" class="profile-pic" />
+        </div>
+        <div class="col-md-8">
+          <h2 class="section-title">About Me</h2>
+          <p>
+            Hello! My Name is Tayyab 
+Sajjad. Currently, I'm 5th Semester student of computer science.
+As a 5th semester Computer Science student, I am excited to apply my growing technical skills and knowledge to real-world problems. I have a strong foundation in programming languages such as Python, Java, and C++, C# and I am eager to learn new technologies and tools to stay current in the rapidly evolving field of computer science.
+In addition to my technical skills, I am also a creative problem solver with a strong work ethic and an eagerness to collaborate with others. I am passionate about using technology to make a positive impact on society.
+As I continue my studies, I am seeking opportunities to gain hands-on experience through internships, research projects, or other relevant activities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container my-5">
+      <h2 class="section-title">Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>HTML</h5>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 90%"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              90%
+            </div>
+          </div>
+          <h5>CSS</h5>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 80%"
+              aria-valuenow="80"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              80%
+            </div>
+          </div>
+          <h5>JavaScript</h5>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 70%"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              40%
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h5>Bootstrap</h5>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 75%"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              75%
+            </div>
+          </div>
+          <h5>React</h5>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 65%"
+              aria-valuenow="65"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              65%
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <!-- Projects Section -->
+<section id="projects" class="container my-5">
+  <h2 class="section-title">Projects</h2>
+  <div class="row">
+    <!-- Project 1 Card -->
+    <div class="col-md-4">
+      <div class="card mb-4 border-0 shadow-sm">
+        <img class="card-img-top" src="/images/project1.png" alt="Project 1">
+        <div class="card-body">
+          <h5 class="card-title">Project 1</h5>
+          <p class="card-text text-muted">Brief project description that highlights a key feature or purpose of the project.</p>
+          <a href="http://colonnetflix.free.nf/?i=1" class="btn btn-link text-primary pl-0" target="_blank">View Project &rarr;</a>
+        </div>
+      </div>
+    </div>
+    <!-- Project 2 Card -->
+    <div class="col-md-4">
+      <div class="card mb-4 border-0 shadow-sm">
+        <img class="card-img-top" src="images/project2.png" alt="Project 2">
+        <div class="card-body">
+          <h5 class="card-title">Project 2</h5>
+          <p class="card-text text-muted">Brief project description that highlights a key feature or purpose of the project.</p>
+          <a href="http://onlinepaino.42web.io/?i=1" class="btn btn-link text-primary pl-0" target="_blank">View Project &rarr;</a>
+        </div>
+      </div>
+    </div>
+    <!-- Project 3 Card -->
+    <div class="col-md-4">
+      <div class="card mb-4 border-0 shadow-sm">
+        <img class="card-img-top" src="images/project3.png" alt="Project 3">
+        <div class="card-body">
+          <h5 class="card-title">Project 3</h5>
+          <p class="card-text text-muted">Brief project description that highlights a key feature or purpose of the project.</p>
+          <a href="http://alaramclock.freesite.online/?i=1" class="btn btn-link text-primary pl-0" target="_blank">View Project &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+      <h2 class="section-title">Contact Me</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="4"
+            placeholder="Enter your message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+
+   <!-- Footer Section -->
+<footer class="footer mt-5 pt-4 pb-4">
+  <div class="container">
+    <div class="row">
+      <!-- About Section -->
+      <div class="col-md-4">
+        <!-- <h5 class="footer-title">About Me</h5>
+        <p class="text-muted">I'm a passionate web developer committed to creating effective, user-friendly digital experiences.</p> -->
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="col-md-4">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#about" class="footer-link">About</a></li>
+          <li><a href="#skills" class="footer-link">Skills</a></li>
+          <li><a href="#projects" class="footer-link">Projects</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Social Media Links -->
+      <div class="col-md-4">
+        <h5 class="footer-title">Connect</h5>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/tayyab-sajjad/" class="footer-social-link" target="_blank">
+              <img src="/images/linkedin.png" alt="LinkedIn" width="24">
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/profile.php?id=100009585791533" class="footer-social-link" target="_blank">
+              <img src="/images/facebook.png" alt="FaceBook" width="24">
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://github.com/tayyab2203" class="footer-social-link" target="_blank">
+              <img src="/images/github-sign.png" alt="Twitter" width="24">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="row mt-4">
+      <div class="col text-center text-muted">
+        <p>&copy; 2024 Tayyab Sajjad. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="./JS/bootstrapjs.js"></script>
+    <script src="./JS/jquery.js"></script>
+    <script src="./JS/mdbjs.js"></script>
+    <script src="./JS/popper.js"></script>
+  </body>
+</html>
